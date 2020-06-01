@@ -1,0 +1,9 @@
+include:
+    - project: 'cidevops/cidevops-gitlabci-service'
+      ref: master
+      file: 'templates/k8s-java-pipeline.yml'
+  
+  
+variables:
+  BUILD_SHELL: 'mvn clean package  -DskipTests'  
+  
